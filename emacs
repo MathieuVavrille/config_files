@@ -14,13 +14,10 @@
  ;; If there is more than one, they won't work right.
  )
 (setq backup-by-copying t      ; don't clobber symlinks
-      backup-directory-alist '(("." . "~/.emacs-saves"))    ; don't litter my fs tree
+      backup-directory-alist '((".*" . "~/.emacs-saves"))    ; don't litter my fs tree
+      auto-save-file-name-transforms '((".*" ,"~/.emacs-saves/" t))
       delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
       version-control t)       ; use versioned backups
-(setq backup-directory-alist
-          `((".*" . ,"~/.emacs-saves/")))
-    (setq auto-save-file-name-transforms
-          `((".*" ,"~/.emacs-saves/" t)))
 (set-face-attribute 'default nil :height 180)
