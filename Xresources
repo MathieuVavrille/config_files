@@ -1,0 +1,12 @@
+!URxvt*font:           6x13,7x14bold
+!URxvt*font:     -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+URxvt*font: xft:mono:medium:size=22
+
+URxvt.scrollBar: False
+URxvt.saveLines: 20000
+URxvt.scrollTtyOutput: False
+URxvt.scrollWithBuffer: True
+URxvt.scrollTtyKeypress: True
+URxvt.reverseVideo: True
+!URxvt.transparent: False
+
