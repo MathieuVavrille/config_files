@@ -38,3 +38,5 @@ alias sizeof="du -m --max-depth 0 -h"
 alias compilehardware="pdflatex Vavrille_report.tex && bibtex Vavrille_report.aux && 
 pdflatex Vavrille_report.tex && pdflatex Vavrille_report.tex"
 
+# Add a nice autocompletion script for git
+source ~/.git-completion.bash
