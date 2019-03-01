@@ -40,3 +40,5 @@ pdflatex Vavrille_report.tex && pdflatex Vavrille_report.tex"
 
 # Add a nice autocompletion script for git
 source ~/.git-completion.bash
+
+alias update-system="sudo pacman -Syu"
