@@ -1,6 +1,7 @@
 !URxvt*font:           6x13,7x14bold
 !URxvt*font:     -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
-URxvt*font: xft:mono:medium:size=22
+!URxvt*font: xft:mono:medium:size=22
+URxvt*font: xft:Inconsolata:style=Medium:size=20
 
 URxvt.scrollBar: False
 URxvt.saveLines: 20000

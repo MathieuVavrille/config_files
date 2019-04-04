@@ -14,7 +14,7 @@ alias rm="rm -i"
 
 # PS1='[\u@\h \W]\$ '
 PROMPT_DIRTRIM=2
-PS1='\[\033[32m\]\u@\h \[\033[31m\]\w\$\[\033[00m\]'
+PS1='\n\[\033[32m\]\u@\h \[\033[31m\]\w\$\[\033[00m\]'
 
 # systemc stuff TODO Delete after course
 export SYSTEMCROOT=/opt/systemc-2.3.2/
@@ -42,3 +42,10 @@ pdflatex Vavrille_report.tex && pdflatex Vavrille_report.tex"
 source ~/.git-completion.bash
 
 alias update-system="sudo pacman -Syu"
+
+# Make the history do not consider duplicates or lines that start with a space
+export HISTCONTROL=ignoreboth:erasedups
+
+export PATH=$PATH:/home/mathieu/Documents/MiniZincIDE-2.2.3-bundle-linux/bin
+
+eval $(opam config env)
