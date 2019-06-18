@@ -55,6 +55,6 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 setxkbmap fr bepo & 
 xbindkeys & 
-redshift -l 48.8534:2.388 &
+redshift -l 48.8534:2.388 -t 6000:2500 &
 
 exec /usr/bin/i3
