@@ -29,6 +29,7 @@ alias gotowork="cd ~/Documents/m2if/"
 
 # autocomplete only the right files (but all the directories)
 complete -f -X '!*.pdf' evince
+complete -f -X '!*.py' python
 
 
 # get the size of a directory
@@ -49,3 +50,5 @@ export HISTCONTROL=ignoreboth:erasedups
 export PATH=$PATH:/home/mathieu/Documents/MiniZincIDE-2.2.3-bundle-linux/bin
 
 eval $(opam config env)
+
+alias returnscreen="xrandr --output eDP1 --auto"
