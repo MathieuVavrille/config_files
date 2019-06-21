@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 alias grep="grep --color"
 
 # Change the colors of ls
-LS_COLORS=$LS_COLORS:'di=1;31:*.py=1;32:*.ml=1;32:*.c=1;32:*.tex=1;32:*.md=1;33:' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'di=1;31:or=47;30:mi=47;30:*.py=1;32:*.ml=1;32:*.c=1;32:*.tex=1;32:*.md=1;33:*.pdf=1;33:' ; export LS_COLORS
 
 # Better safe than sorry
 alias rm="rm -i"
