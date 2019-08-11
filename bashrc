@@ -55,3 +55,5 @@ export PATH=$PATH:/home/mathieu/Documents/MiniZincIDE-2.2.3-bundle-linux/bin
 eval $(opam config env)
 
 alias returnscreen="xrandr --output eDP1 --auto"
+
+alias e="emacs"
