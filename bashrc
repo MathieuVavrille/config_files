@@ -33,6 +33,7 @@ alias gotowork="cd ~/Documents/m2if/"
 # autocomplete only the right files (but all the directories)
 complete -f -X '!*.pdf' evince
 complete -f -X '!*.py' python
+complete -f -X '!*.rar' unrar
 
 
 # get the size of a directory
