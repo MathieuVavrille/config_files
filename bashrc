@@ -58,3 +58,7 @@ eval $(opam config env)
 alias returnscreen="xrandr --output eDP1 --auto"
 
 alias e="emacs"
+
+alias bluetooth_start='echo -e "power on\nagent on\ndefault_agent\nscan on\ndevices\n" | bluetoothctl -- command'
+
+alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
