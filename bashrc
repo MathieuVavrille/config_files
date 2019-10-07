@@ -46,7 +46,7 @@ pdflatex Vavrille_report.tex && pdflatex Vavrille_report.tex"
 # Add a nice autocompletion script for git
 source ~/.git-completion.bash
 
-alias update-system="sudo pacman -Syu"
+alias update-system="pacman -Syu"
 
 # Make the history do not consider duplicates or lines that start with a space
 export HISTCONTROL=ignoreboth:erasedups
@@ -58,7 +58,11 @@ eval $(opam config env)
 alias returnscreen="xrandr --output eDP1 --auto"
 
 alias e="emacs"
+alias m="make"
+alias v="vlc"
 
 alias bluetooth_start='echo -e "power on\nagent on\ndefault_agent\nscan on\ndevices\n" | bluetoothctl -- command'
 
-alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
+alias start_switch="fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
+
+alias startscreensatalia="xrandr --output HDMI1 --auto --right-of eDP1"
