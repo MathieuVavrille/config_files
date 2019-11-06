@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 alias grep="grep --color"
 
 # Change the colors of ls
-LS_COLORS=$LS_COLORS:'di=1;31:or=47;30:mi=47;30:*.py=1;32:*.ml=1;32:*.c=1;32:*.tex=1;32:*.md=1;33:*.pdf=1;33:' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'di=1;31:or=47;30:mi=47;30:*.java=1;32:*.py=1;32:*.ml=1;32:*.c=1;32:*.tex=1;32:*.md=1;33:*.pdf=1;33:*.txt=1;33' ; export LS_COLORS
 
 # Better safe than sorry
 alias rm="rm -i"
@@ -34,6 +34,7 @@ alias gotowork="cd ~/Documents/m2if/"
 complete -f -X '!*.pdf' evince
 complete -f -X '!*.py' python
 complete -f -X '!*.rar' unrar
+complete -f -X '!*.nsp' goldtree-py
 
 
 # get the size of a directory
@@ -46,7 +47,7 @@ pdflatex Vavrille_report.tex && pdflatex Vavrille_report.tex"
 # Add a nice autocompletion script for git
 source ~/.git-completion.bash
 
-alias update-system="pacman -Syu"
+alias update-system="sudo pacman -Syu"
 
 # Make the history do not consider duplicates or lines that start with a space
 export HISTCONTROL=ignoreboth:erasedups
@@ -63,6 +64,25 @@ alias v="vlc"
 
 alias bluetooth_start='echo -e "power on\nagent on\ndefault_agent\nscan on\ndevices\n" | bluetoothctl -- command'
 
-alias start_switch="fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
+alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
 
-alias startscreensatalia="xrandr --output HDMI1 --auto --right-of eDP1"
+alias screensatalia="xrandr --output HDMI1 --auto --right-of eDP1"
+alias uscreensatalia="xrandr --output HDMI1 --off"
+
+
+# Use FICO Xpress
+if [ -z "$XPRESSDIR" -o ! -d "$XPRESSDIR" ]; then
+ . /opt/xpressmp/bin/xpvars.sh
+fi
+
+#mounting drives
+alias udmount="udisksctl mount -b" # Add /dev/sdX
+alias udumount="udisksctl unmount -b" # same
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/mathieu/Doocuments/satalia/google-cloud-sdk/path.bash.inc' ]; then . '/home/mathieu/Doocuments/satalia/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/mathieu/Doocuments/satalia/google-cloud-sdk/completion.bash.inc' ]; then . '/home/mathieu/Doocuments/satalia/google-cloud-sdk/completion.bash.inc'; fi
+
+alias back="cd ../../../../../../../.."

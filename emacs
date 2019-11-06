@@ -35,3 +35,12 @@
 
 (load "/home/mathieu/.opam/default/share/emacs/site-lisp/tuareg-site-file")
 
+(add-hook 'java-mode-hook (lambda()
+                          (setq c-basic-offset 2
+                           indent-tabs-mode nil)))
+
+;; Show the columns
+(setq column-number-mode t)
+
+;; Delete the text if it is selected and I write on it (like all other text editors)
+(delete-selection-mode 1)
