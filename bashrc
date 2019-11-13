@@ -15,6 +15,9 @@ LS_COLORS=$LS_COLORS:'di=1;31:or=47;30:mi=47;30:*.java=1;32:*.py=1;32:*.ml=1;32:
 # Better safe than sorry
 alias rm="rm -i"
 
+# autocomplete after sudo
+alias sudo="sudo "
+
 # PS1='[\u@\h \W]\$ '
 PROMPT_DIRTRIM=2
 PS1='\n\[\033[32m\]\u@\h \[\033[31m\]\w\$\[\033[00m\]'
@@ -35,6 +38,7 @@ complete -f -X '!*.pdf' evince
 complete -f -X '!*.py' python
 complete -f -X '!*.rar' unrar
 complete -f -X '!*.nsp' goldtree-py
+complete -d  cd
 
 
 # get the size of a directory
