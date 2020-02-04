@@ -44,3 +44,7 @@
 
 ;; Delete the text if it is selected and I write on it (like all other text editors)
 (delete-selection-mode 1)
+
+;; Remove the menu bar and toolbar
+(menu-bar-mode -1)
+(tool-bar-mode -1)
