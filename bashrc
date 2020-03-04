@@ -56,6 +56,7 @@ alias e="emacs"
 alias ev="evince"
 alias m="make"
 alias v="vlc"
+alias p="python3"
 
 alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
 
