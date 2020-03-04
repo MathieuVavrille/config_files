@@ -85,7 +85,7 @@
 "xbacklight -dec 10"
   XF86MonBrightnessDown
 
-"i3lock --blur=10 --insidevercolor=0000e040 --insidewrongcolor=a0000040 --insidecolor=00000000 --ringvercolor=0000e0ff --ringwrongcolor=a00000ff --ringcolor=00ff0040 --linecolor=00000000 --keyhlcolor=00ff00ff --bshlcolor=a00000ff --veriftext="" --wrongtext="" --noinputtext="" --radius=300 --ring-width=40"
+"i3lock --blur=10 --insidevercolor=0000e040 --insidewrongcolor=a0000040 --insidecolor=00000000 --ringvercolor=0000e0ff --ringwrongcolor=a00000ff --ringcolor=00ff0040 --linecolor=00000000 --keyhlcolor=00ff00ff --bshlcolor=a00000ff --separatorcolor=00000000 --veriftext="" --wrongtext="" --noinputtext="" --radius=300 --ring-width=30"
   Mod4 + j
 
   
