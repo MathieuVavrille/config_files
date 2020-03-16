@@ -85,7 +85,7 @@
 "xbacklight -dec 10"
   XF86MonBrightnessDown
 
-"i3lock --blur=10 --insidevercolor=0000e040 --insidewrongcolor=a0000040 --insidecolor=00000000 --ringvercolor=0000e0ff --ringwrongcolor=a00000ff --ringcolor=00ff0040 --linecolor=00000000 --keyhlcolor=00ff00ff --bshlcolor=a00000ff --separatorcolor=00000000 --veriftext="" --wrongtext="" --noinputtext="" --radius=300 --ring-width=30"
+"ringarray=( 41b3a3 853d97 8d8741 fbeec1 5cdb95 3feee6 ffe400 14a76c f8e9a1 faed26 53a80f );number=$(($RANDOM%${#ringarray[@]}));r=${ringarray[$number]};w=b23850;v=10b9c0;i3lock --blur=10 --insidevercolor=$v\40 --insidewrongcolor=$w\40 --insidecolor=00000000 --ringvercolor=$v\ff --ringwrongcolor=$w\ff --ringcolor=$r\40 --linecolor=00000000 --keyhlcolor=$r\ff --bshlcolor=c03050\ff --separatorcolor=00000000 --veriftext="" --wrongtext="" --noinputtext="" --radius=300 --ring-width=30"
   Mod4 + j
 
   
