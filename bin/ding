@@ -1,0 +1,3 @@
+#!/bin/bash
+
+date +"%T" && time $* && cvlc --quiet --play-and-exit ~/Musics/ding.mp3 > /dev/null 2> /dev/null

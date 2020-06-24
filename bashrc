@@ -68,4 +68,11 @@ alias udmount="udisksctl mount -b" # Add /dev/sdX
 alias udumount="udisksctl unmount -b" # same
 
 # easy find
-alias find_name="find . -name"
+alias findname="find . -name"
+alias grei="grep -iRl"
+
+export GUROBI_HOME="/opt/gurobi902/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+
+export PATH="${PATH}:~/config_files/bin"
