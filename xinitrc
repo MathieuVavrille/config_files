@@ -40,5 +40,7 @@ fi
 setxkbmap fr bepo & 
 xbindkeys & 
 redshift -l 48.8534:2.388 -t 6000:2500 &
+blueman-applet & 
+nm-applet & 
 
 exec /usr/bin/i3

@@ -58,7 +58,7 @@ alias m="make"
 alias v="vlc"
 alias p="python3"
 
-alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.0.1.pre6.bin"
+alias start_switch="sudo fusee-launcher ~/Documents/switch/hekate_ctcaer_5.3.0.bin"
 
 alias screennantes="xrandr --output DP1 --auto --right-of eDP1"
 alias uscreennantes="xrandr --output DP1 --off"
